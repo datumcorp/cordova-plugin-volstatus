@@ -1,5 +1,5 @@
 module.exports = {
-    isGPSEnabled: function (successCallback, errorCallback) {
+    /*isGPSEnabled: function (successCallback, errorCallback) {
     	console.log('run isGPSEnabled')
         cordova.exec(successCallback, errorCallback, "GPSCheck", "isGPSEnabled", []);
     },
@@ -18,6 +18,9 @@ module.exports = {
     getLocation: function (successCallback, errorCallback) {
     	console.log('run getLocation')
         cordova.exec(successCallback, errorCallback, "GPSCheck", "getLocation", []);
-    }
-
+    }*/
+    getVolStatus = function (successCallback, errorCallback) {
+        //this.exec('getVolStatus', 0, callback, scope);
+        cordova.exec(successCallback, errorCallback, "VolStatus", "getVolStatus", []);
+    };
 };
