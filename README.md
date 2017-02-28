@@ -1,6 +1,5 @@
-# Cordova plugin - MFS Utils
+# Cordova plugin VolStatus
 
-MFS utils
 
 ## Using
 
@@ -8,15 +7,9 @@ MFS utils
 Install the plugin
 
     
-    $ cordova plugin add https://github.com/sxagan/cordova-plugin-mfsutils.git
+    $ cordova plugin add https://github.com/datumcorp/cordova-plugin-volstatus.git
     
 
-### isGPSEnabled
+### getVolStatus
 
-    gpscheck.isGPSEnabled(function(result){console.log("isGPSEnabled: ",result)}, function(err){console.log("isGPSEnabled err: ",err)});
-### isNetworkEnabled
-
-    gpscheck.isNetworkEnabled(function(result){console.log("isNetworkEnabled: ",result)}, function(err){console.log("isNetworkEnabled err: ",err)});
-### getLocation
-
-    gpscheck.getLocation(function(result){console.log("getLocation: ",result)}, function(err){console.log("getLocation err: ",err)});
+    volstatus.getVolStatus(function(result){console.log("volstatus: ",result)}, function(err){console.log("volstatus err: ",err)});
