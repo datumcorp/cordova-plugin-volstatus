@@ -58,11 +58,11 @@ public class VolStatus extends CordovaPlugin {
 
             getVolStatus(callbackContext);
 
-        } else {
+        } 
             
-            return false;
+        return true;
 
-        }
+        
     }
 
     /**
