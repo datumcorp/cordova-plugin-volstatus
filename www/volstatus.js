@@ -19,8 +19,8 @@ module.exports = {
     	console.log('run getLocation')
         cordova.exec(successCallback, errorCallback, "GPSCheck", "getLocation", []);
     }*/
-    getVolStatus = function (successCallback, errorCallback) {
+    getVolStatus : function (successCallback, errorCallback) {
         //this.exec('getVolStatus', 0, callback, scope);
         cordova.exec(successCallback, errorCallback, "VolStatus", "getVolStatus", []);
-    };
+    }
 };
