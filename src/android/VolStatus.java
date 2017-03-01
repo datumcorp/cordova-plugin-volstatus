@@ -11,6 +11,8 @@ import android.util.Log;
 import android.content.Context;
 import android.os.Bundle;
 
+import android.media.AudioManager;
+
 public class VolStatus extends CordovaPlugin {
 
 	private static CordovaWebView webView = null;
@@ -54,7 +56,7 @@ public class VolStatus extends CordovaPlugin {
 
         if (action.equals("getVolStatus")) {
 
-            getVolStatus(command);
+            getVolStatus(callbackContext);
 
         } else {
             
